@@ -49,7 +49,7 @@ body{
     background-color: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 40px;
+    padding: 45px 35px;
 }
 
 .title{
@@ -107,6 +107,7 @@ body{
     text-decoration: underline;
     text-decoration-color: var(--header-color);
     cursor: pointer;
+    transition: .3s;
 }
 
 .payment{
@@ -121,16 +122,30 @@ body{
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0px 20px 10px 0px hsl(225, 100%, 98%);
+    transition: 0.3s;
+}
+
+.payment:hover,
+.right:hover{
+    opacity: .8;
+    text-decoration: none;
+    border-color: var(--primary-color-2);
 }
 
 .cancel{
     width: 100%;
     text-align: center;
-    margin-top: 30px;
     font-size: 16px;
     font-weight: 700;
     color: var(--pragraph-color);
     cursor: pointer;
+    transition: .3s;
+    width: fit-content;
+    margin: 30px auto 0;
+}
+
+.cancel:hover{
+    color: var(--header-color);
 }
 
 /* Mobile */
